@@ -1,0 +1,6 @@
+/Users/lale/Desktop/MAGs/fasta_files1/CR931632_Streptococcus_pneumoniae_strain_519_43_serotype_1.fa
+/Users/lale/Desktop/MAGs/fasta_files1/CR931633_Streptococcus_pneumoniae_strain_pn2L_serotype_2.fa
+/Users/lale/Desktop/MAGs/fasta_files1/CR931634.2_Streptococcus_pneumoniae_strain_524_62_serotype_3.fa
+/Users/lale/Desktop/MAGs/fasta_files1/CR931635_Streptococcus_pneumoniae_strain_600_62_serotype_4.fa
+/Users/lale/Desktop/MAGs/fasta_files1/CR931636_Streptococcus_pneumoniae_strain_Ambrose_serotype_5.fa
+/Users/lale/Desktop/MAGs/fasta_files1/CR931637_Streptococcus_pneumoniae_strain_Ambrose_serotype_5.fa
