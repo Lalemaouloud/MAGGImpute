@@ -29,13 +29,16 @@ Before you begin, make sure your system meets the following requirements:
 ### Step 1: Clone ggCaller Repository
 
 1. Open a terminal.
-2. Execute the command below to clone the ggCaller repository from [GitHub](https://github.com/bacpop/ggCaller/tree/master):
+2. Execute the command below to clone the ggCaller repository with the function from [GitHub](https://github.com/Lalemaouloud/ggCaller/tree/master):
 
+```bash
+git clone --recursive https://github.com/Lalemaouloud/ggCaller && cd ggCaller
+```
+
+## To download the original ggCaller without any modification :
 ```bash
 git clone --recursive https://github.com/samhorsfield96/ggCaller && cd ggCaller
 ```
-
-This command downloads the latest version of ggCaller to your local machine and moves you into the `ggCaller` directory.
 
 ### Step 2: Create and Activate a Conda Environment
 
