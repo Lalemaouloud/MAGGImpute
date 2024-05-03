@@ -1,7 +1,0 @@
-{
-	"codons": 
-	{
-		"start" : ["ATG", "GTG", "TTG"],
-		"stop" : ["TAA", "TGA", "TAG"]
-	}
-}
