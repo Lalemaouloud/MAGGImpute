@@ -47,7 +47,7 @@ simulated_MAGs_matrix = simulated_MAGs_matrix.T
 # Replace zeros with NaN to simulate missing values in the simulated matrix
 simulated_MAGs_matrix.replace(0, np.nan, inplace=True)
 #print(simulated_MAGs_matrix)
-#simulated_MAGs_matrix=simulated_MAGs
+simulated_MAGs = simulated_MAGs_matrix
 # Reshape the data to the format required by surprise
 def transform_to_surprise_format(df):
     """Transform the DataFrame into a list of tuples suitable for Surprise.
