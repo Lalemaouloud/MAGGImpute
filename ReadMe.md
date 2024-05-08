@@ -1,4 +1,4 @@
-# How to install ggCaller with the MAGs-querie function 🤔❓
+# How to install ggCaller with the MAGs-querie function ❓
 ### You can install ggCaller from Source
 
 > This Mini-Tutorial will guide you through the installation process, from setting up your environment to verifying the successful installation.
