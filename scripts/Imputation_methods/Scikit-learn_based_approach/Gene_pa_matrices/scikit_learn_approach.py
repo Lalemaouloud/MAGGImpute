@@ -17,9 +17,9 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-reference_matrix = pd.read_csv('ref.csv', index_col=0)
+reference_matrix = pd.read_csv('gene_pa_SP_Before_simulation.csv', index_col=0)
 reference_matrix = reference_matrix.T
-simulated_MAGs_matrix = pd.read_csv('mags.csv', index_col=0)
+simulated_MAGs_matrix = pd.read_csv('gene_pa_SP_After_simulation.csv', index_col=0)
 simulated_MAGs_matrix = simulated_MAGs_matrix .T
 #simulated_MAGs_matrix = simulated_MAGs_matrix.replace(0, pd.NA)
 #Empty DataFrames so I can Append the imputed MAGs matrix in them later
