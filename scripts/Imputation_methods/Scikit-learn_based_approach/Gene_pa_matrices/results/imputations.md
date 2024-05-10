@@ -15,7 +15,7 @@
   - Extra Trees Regressor
   - K-Neighbors Regressor
   - KNN Imputer
-- Uses we added `argparse` for flexible command-line arguments.
+- We added `argparse` for flexible command-line arguments.
 - Generates output matrices with imputed values.
 
 ## Usage ⚙️
