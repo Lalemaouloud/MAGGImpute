@@ -1,4 +1,4 @@
-## Descriptions of script imputation-methods.py : This script perform various scikit-learn imputation methods.
+## Descriptions of the imputation-methods.py script : This script perform various scikit-learn imputation methods.
 
 ## Table of Contents
 - [Imputation Methods for MAGs Data](#imputation-methods-for-mags-data)
