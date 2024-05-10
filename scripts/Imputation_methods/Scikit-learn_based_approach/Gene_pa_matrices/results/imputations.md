@@ -2,7 +2,6 @@
 
 ## Table of Contents
 - [Imputation Methods for MAGs Data](#imputation-methods-for-mags-data)
-  - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Usage](#usage)
   - [Imputation Methods](#imputation-methods)
