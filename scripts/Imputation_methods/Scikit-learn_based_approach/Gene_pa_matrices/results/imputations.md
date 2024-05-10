@@ -1,4 +1,4 @@
-## Descriptions of the imputation-methods.py script : This script perform various scikit-learn imputation methods.
+## Descriptions of the imputation-methods.py script 🌟 : This script perform various scikit-learn imputation 🧩 methods.
 
 ## Table of Contents
 - [Imputation Methods for MAGs Data](#imputation-methods-for-mags-data)
@@ -19,10 +19,10 @@
 - Uses we added `argparse` for flexible command-line arguments.
 - Generates output matrices with imputed values.
 
-## Usage
+## Usage ⚙️
 This script can be executed by providing the necessary command-line arguments.
 
-### Command-Line Arguments
+### Command-Line Arguments 
 - `--method`: The imputation method to use. Options:
   - `SimpleImputer`
   - `BayesianRidge`
