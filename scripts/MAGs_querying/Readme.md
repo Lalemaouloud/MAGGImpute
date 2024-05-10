@@ -21,7 +21,7 @@ The function is structured as follows:
 - Ensure all input files and directories are correctly specified and accessible.
 - Adjust the number of threads based on your processing environment to optimize performance.
 
-![Example Image](/src/Screenshot.png "This is an example image")
+![Example Image](/src/Screenshot.png)
 
 
 ## How to Execute the Query Function? ⚙️🤔
