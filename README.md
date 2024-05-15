@@ -1,2 +1,2 @@
 # MAGGImpute
- An Imputation workflow for MAGs with ggCaller
+ A Metagenome annotation workflow with the graph based annotation tool, ggcaller.
