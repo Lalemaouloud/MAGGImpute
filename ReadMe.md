@@ -1,8 +1,8 @@
 # How to install ggCaller with the MAGs-querie function ❓
 ### You can install ggCaller from Source
 
-> This Mini-Tutorial will guide you through the installation process, from setting up your environment to verifying the successful installation.
-
+> This Mini-Tutorial will guide you through the installation process, from setting up your environment to verifying the successful installation, you can also consult The pathogen Informatics and modelling Group's [website][https://www.bacpop.org/blog/ggcaller_installation/]
+for more informations.
 
 You first need to set up your environment with the required packages, which are listed in either [environment_linux.yml](https://github.com/bacpop/ggCaller/blob/master/environment_linux.yml) or [environment_macOS.yml](https://github.com/bacpop/ggCaller/blob/master/environment_macOS.yml) based on your OS. You'll also need a C++17 compiler, such as gcc version 7.3 or higher. After setting up the environment using Conda, clone the ggCaller repository and install it with Python setup tools. 
 
