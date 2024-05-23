@@ -16,8 +16,10 @@ def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_d
         return
 
     objects_dir = os.path.join(objects_dir, "")
-    #panaroo_graph = nx.read_gml('/hps/software/users/jlees/lale/ggCaller_test2/Dataset_3_SP_V2/before/final_graph_references.gml')
-    #updated_panaroo_graph = panaroo_graph.copy()
+    ####Change the path for each dataset. 
+    #on my To do list: get the graph as input so we don't need to adapt the code everytime we query
+    panaroo_graph = nx.read_gml('/hps/software/users/jlees/lale/ggCaller_test2/Dataset_3_SP_V2/before/final_graph_references.gml')
+    updated_panaroo_graph = panaroo_graph.copy()
     
     # Reset geneIDs and genomeIDs
     for node, data in updated_panaroo_graph.nodes(data=True):
