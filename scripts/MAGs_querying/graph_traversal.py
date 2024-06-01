@@ -5,7 +5,7 @@ import _pickle as cPickle
 from Bio import SeqIO
 import networkx as nx
 import pandas as pd
-def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_dir, query_id, num_threads):
+def search_graph(graph, panaroo_graph, graphfile, coloursfile, queryfile, objects_dir, output_dir, query_id, num_threads):
     """
   Searches the ggCaller graph for each MAG listed in the input file,
     matching its sequences against the graph.
@@ -16,13 +16,13 @@ def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_d
         return
 
     objects_dir = os.path.join(objects_dir, "")
-    ####Change the path for each dataset. 
-    #on my To do list: get the graph as input so we don't need to adapt the code everytime we query
-    panaroo_graph = nx.read_gml('/hps/software/users/jlees/lale/ggCaller_test2/Dataset_3_SP_V2/before/final_graph_references.gml')
-    updated_panaroo_graph = panaroo_graph.copy()
+    updated_panaroo_graph = nx.read_gml(panaroo_graph)
+    panaroo_graph2 = updated_panaroo_graph.copy()
+    for node, data in updated_panaroo_graph.nodes(data=True):
+        print(f"Node: {node}, Data: {data}")
     
     # Reset geneIDs and genomeIDs
-    for node, data in updated_panaroo_graph.nodes(data=True):
+    for node, data in panaroo_graph2.nodes(data=True):
         if 'geneIDs' in data:
             data['geneIDs'] = []  # Empty geneIDs
         if 'genomeIDs' in data:
@@ -33,7 +33,7 @@ def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_d
     node_sequences = {}
 
     # Iterate over each node in the graph
-    for node, data in panaroo_graph.nodes(data=True):
+    for node, data in panaroo_graph2.nodes(data=True):
         # Ensure the node is in the dictionary with an empty list to start with
         if node not in node_sequences:
             node_sequences[node] = []
@@ -49,6 +49,7 @@ def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_d
     node_list = list(node_sequences.keys())
     mag_list = []
     node_matrix_df = pd.DataFrame(index=node_list)
+    geneIDs = set()
 # Iterate over MAG paths listed in the queryfile
     with open(queryfile, "r") as paths_file:
         for mag_path in paths_file:
@@ -105,7 +106,7 @@ def search_graph(graph, graphfile, coloursfile, queryfile, objects_dir, output_d
                         ORF_dict[ORF_ID].append(i)
                         #print(ORF_dict.keys())
                         #geneIDs = ORF_dict.keys()
-                        geneIDs = set(ORF_dict.keys())
+            geneIDs.update(ORF_dict.keys())
             #print("geneIDs",geneIDs)
             gene_to_node = {}
             for node, seq_list in node_sequences.items():
