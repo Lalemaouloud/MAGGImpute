@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 from surprise import SVD, Dataset, Reader
 
-# Set a random seed for reproducibility,
+ 
 SEED = 42
 np.random.seed(SEED)
 
@@ -50,16 +50,16 @@ def calculate_metrics(reference_matrix, simulated_MAGs_matrix):
         for j in range(len(reference_matrix.columns)):
             if reference_matrix.iloc[i, j] == 1 and simulated_MAGs_matrix.iloc[i, j] == 1:
                 TP += 1
-                result_matrix[i, j] = 1  # TP
+                result_matrix[i, j] = 1   
             elif reference_matrix.iloc[i, j] == 0 and simulated_MAGs_matrix.iloc[i, j] == 0:
                 TN += 1
-                result_matrix[i, j] = 2  # TN
+                result_matrix[i, j] = 2   
             elif reference_matrix.iloc[i, j] == 0 and simulated_MAGs_matrix.iloc[i, j] == 1:
                 FP += 1
-                result_matrix[i, j] = 3  # FP
+                result_matrix[i, j] = 3  
             elif reference_matrix.iloc[i, j] == 1 and simulated_MAGs_matrix.iloc[i, j] == 0:
                 FN += 1
-                result_matrix[i, j] = 4  # FN
+                result_matrix[i, j] = 4  
 
     return TP, TN, FP, FN, result_matrix
     
@@ -68,7 +68,8 @@ def calculate_metrics(reference_matrix, simulated_MAGs_matrix):
     
     
     
-####################################################
+#########
+
 
 TP1, TN1, FP1, FN1, result_matrix_1 = calculate_metrics(reference_matrix, filled_simulated_MAGs)
 
