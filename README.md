@@ -6,6 +6,9 @@
 ![Workflow](workflow/MAGGImpute_workflow.png)
 
 
+![Workflow](workflow/logo.gif)
+
+
 
 1. **Nextflow Process Initialization**:
    - The workflow begins with the dataset being processed by a Nextflow pipeline. This pipeline orchestrates the preprocessing and preparation of the genomic data by splitting the genomes and repeating the whole process for 3 runs.
