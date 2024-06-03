@@ -6,7 +6,7 @@
 ![Workflow](workflow/MAGGImpute_workflow.png)
 
 
-![Workflow](workflow/logo.gif)
+
 
 
 
@@ -35,3 +35,7 @@
    - **Analysis and Interpretation**: The results of the imputation and the performance of different methods are analyzed to determine the best approaches for handling incomplete MAG data.
 
 ---
+
+
+
+![Workflow](workflow/logo.gif)
