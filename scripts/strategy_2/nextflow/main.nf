@@ -4,9 +4,7 @@ nextflow.enable.dsl = 1
 
 /*
  * Nextflow Pipeline to Process Genomes
- * Steps:
- * 1. Split dataset into reference and simulation directories and generate input.txt in each directory (the split_genome.py script does that)
- * 2. Run remove_sequence.py on the generated input.txt and completeness_values.txt
+ * Split dataset into reference and simulation directories and generate input.txt in each directory (the split_genome.py script does that)
  */
 
 params.dataset = "/hps/software/users/jlees/lale/ggCaller_test2/Strategy2_final/EC/bsac_collection_ref"
