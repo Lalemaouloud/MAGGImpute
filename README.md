@@ -3,7 +3,7 @@
 
 
 
-![Workflow](workflow/MAGGImpute_workflow.png)
+![Workflow](workflow/MAGGIMPUTE.png)
 
 
 
