@@ -28,9 +28,10 @@ The function is structured as follows:
 To run the query function, use the following command with the appropriate arguments:
 
 ```bash
-ggcaller --query [path/to/input.txt] --graph [path/to/input.gfa] --colours [path/to/input.color.bfg] --data [path/to/ggc_data] --out [output_directory] --threads [number_of_threads]
+ggcaller --query [path/to/input.txt] --graph [path/to/input.gfa] --panaroo-graph [path/to/ggCaller_output/final_graph.gml] --colours [path/to/input.color.bfg] --data [path/to/ggc_data] --out [output_directory] --threads [number_of_threads]
 ```
 
+This command ensures that ggCaller processes the specified MAGs using the updated query function and generates the necessary gene presence/absence matrices for further analysis.
 
 ## Command Parameters 📝
 
@@ -39,11 +40,14 @@ ggcaller --query [path/to/input.txt] --graph [path/to/input.gfa] --colours [path
 - **Example**: `--query ./data/MAGs_list.txt`
 - **Details**: This file should contain one path per line, each pointing to a MAG file that needs to be queried against the graph.
 
-### `--graph [path/to/input.gfa]`
-- **Purpose**: Specifies the path to the graph file in GFA (Graphical Fragment Assembly) format.
-- **Example**: `--graph ./graphs/reference_graph.gfa`
-- **Details**: This graph represents the reference sequences that the MAGs will be compared against.
-
+### `--panaroo-graph [path/to/ggCaller_output/final_graph.gml]`
+- **Purpose**: Specifies the path to the Panaroo graph generated with ggCaller (pre simulation)
+- **Example**: `--panaroo-graph ./ggCaller_output/final_graph.gml`
+- **Details**: gene graphs post-quality control with Panaroo for the pre-simulation MAGs, for more details take a look at the [documentation](https://ggcaller.readthedocs.io/en/latest/tutorial.html)
+### `--query [path/to/input.txt]`
+- **Purpose**: Specifies the path to the input file containing a list of MAG paths to be processed.
+- **Example**: `--query ./data/MAGs_list.txt`
+- **Details**: This file should contain one path per line, each pointing to a MAG file that needs to be queried against the graph.
 ### `--colours [path/to/input.color.bfg]`
 - **Purpose**: Specifies the path to the colour file associated with the graph.
 - **Example**: `--colours ./graphs/reference_colours.bfg`
