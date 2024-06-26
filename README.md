@@ -1,4 +1,4 @@
-# MAGGImpute
+# MAGGIMPUTE (Metagenome-Assembled genomes Gene-Graph caller Imputation-based Workflow)
  A Metagenome annotation workflow with the graph based annotation tool, ggcaller.
 
 
